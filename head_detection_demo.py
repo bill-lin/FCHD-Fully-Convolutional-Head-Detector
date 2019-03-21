@@ -16,7 +16,7 @@ import src.utils as utils
 from src.config import opt
 import time
 
-SAVE_FLAG = 0
+SAVE_FLAG = 1
 THRESH = 0.01
 IM_RESIZE = False
 
