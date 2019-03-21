@@ -53,7 +53,7 @@ def detect(img_path, model_path):
     print ("Found heads: " + str(pred_bboxes_.shape[0]))
     for i in range(pred_bboxes_.shape[0]):
         ymin, xmin, ymax, xmax = pred_bboxes_[i,:]
-        utils.draw_bounding_box_on_image_array(img_raw,ymin, xmin, ymax, xmax)
+        utils.draw_bounding_box_on_image_array(img_raw, ymin / scale, xmin / scale, ymax / scale, xmax / scale)
     plt.axis('off')
     plt.imshow(img_raw)
     if SAVE_FLAG == 1:
