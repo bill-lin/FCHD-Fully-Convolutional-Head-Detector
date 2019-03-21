@@ -29,8 +29,8 @@ def read_img(path):
     img_raw = np.asarray(f, dtype=np.uint8)
     img_raw_final = img_raw.copy()
     img = np.asarray(f, dtype=np.float32)
-    _, H, W = img.shape
     img = img.transpose((2,0,1))
+    _, H, W = img.shape
     img = preprocess(img)
     _, o_H, o_W = img.shape
     scale = o_H / H
