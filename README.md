@@ -28,7 +28,7 @@ This is the code for FCHD - A Fast and accurate head detector. See [the paper](h
 
 ```
 sudo docker build -t pytouch:gpu0_4 -f Dockerfile .
-sudo docker run --runtime=nvidia -v /home/ubuntu/develop/FCHD-Fully-Convolutional-Head-Detector:/root/FCHD-Fully-Convolutional-Head-Detector  -it pytouch:gpu0_4 /bin/bash
+sudo docker run --runtime=nvidia -v /home/ubuntu/develop/FCHD-Fully-Convolutional-Head-Detector:/home/docker/FCHD-Fully-Convolutional-Head-Detector  -it pytouch:gpu0_4 /bin/bash
 ```
 ## Training
 1) Download the caffe pre-trained VGG16 from the following [link](https://drive.google.com/open?id=10AwNitG-5gq-YEJcG9iihosiOu7vAnfO). Store this pre-trained model in `data/pretrained_model ` folder.

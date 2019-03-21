@@ -4,10 +4,12 @@ class Config:
     brainwash_dataset_root_path = '/home/aditya-tyco/Desktop/aditya_personal_projects/head_detection_v5/data/brainwash_raw'
     hollywood_dataset_root_path = '/home/aditya-tyco/Desktop/aditya_personal_projects/head_detection_v5/data/HollywoodHeads'
     min_size = 600  # image resize
-    max_size = 1000 # image resize 
+    max_size = 1000  # image resize
     caffe_pretrain = True
-    caffe_pretrain_path = '/home/aditya-tyco/Desktop/aditya_personal_projects/head_detection_v5/data/pretrained_model/vgg16_caffe.pth'
-    model_save_path = '/home/aditya-tyco/Desktop/aditya_personal_projects/head_detection_v5/checkpoints'
+    caffe_pretrain_path = '/home/docker/FCHD-Fully-Convolutional-Head-Detector/checkpoints/vgg16_caffe.pth'
+    model_save_path = '/home/docker/FCHD-Fully-Convolutional-Head-Detector/checkpoints/head_detector_final'
+    test_output_path = '/home/docker/FCHD-Fully-Convolutional-Head-Detector/output'
+
     # sigma for l1_smooth_loss
     rpn_sigma = 3.
 

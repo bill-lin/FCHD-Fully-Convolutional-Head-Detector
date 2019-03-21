@@ -50,5 +50,6 @@ ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_ROOT/lib64
 
 RUN pip install cupy-cuda90
 
+RUN pip install scikit-image
 
 CMD ["/bin/bash"]
